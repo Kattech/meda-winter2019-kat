@@ -1,11 +1,13 @@
+// KIM: Everything on the right side of the = happens first! Especially within parenthesis.  Never on the left.
+//piperita- a more colorful iTerm
+
+
 //Renaming ARGV array for easier reading
 //When using ARGV, start with index 2, because 0 and 1 are not useful in our code.
 
 //var terminalArguments = process.argv;
 
-
 //var sum = terminalArguments[2] + terminalArguments[3];
-
 
 //console.log(sum);
 
@@ -42,14 +44,13 @@ var sum = number1+ parseInt(terminalArguments[3]);
 
 console.log(sum);
 console.log(true);
-// Everything on the right side of the = happens first! Especially within parenthesis.  Never on the left.
-//piperita
 
-//bug vs. error: it works but doesn't return the value you expected.
+
+//bug vs. error: it works but doesn't return the value you expected. Error just can't run
 
 //100 + undefined = Nan
 //NaN tells you there is an issue
 // logical prblm in the code not passing the correct values.
 /*Ask a question via an if statement to test. (See yesterday's file from Wed Oct 23. ) This if statement should go
-right after ln 15 */
+right after var terminalArguments = process.argv; */
 
