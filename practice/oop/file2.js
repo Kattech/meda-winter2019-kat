@@ -1,0 +1,1 @@
+//create file2.js, use one function from file1.js
