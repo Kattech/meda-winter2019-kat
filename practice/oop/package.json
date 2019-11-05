@@ -1,0 +1,15 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "Playing with classes by using vehicles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kat",
+    "Martin"
+  ],
+  "author": "Kat Martin",
+  "license": "ISC"
+}
