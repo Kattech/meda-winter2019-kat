@@ -5,7 +5,11 @@ let data = fs.readFileSync("2018entries.json", "utf8");
 data = JSON.parse(data);
 //convert into an obj
 
-
+//Create an array that will hold all objects
+dataObjects = new Array();
+for (let i = 0; i < data.length; i ++){
+    dataObjects.push(stringToObject(data[i]) );
+}
 
 
 //Question 1: What month had the most evictions?
@@ -37,8 +41,3 @@ function stringToObject(string){
     //Return new object to call location
    return evictionObject;
 }
-
-    //Split up the file date into its individual parts.
-    let dateArray = entryArray[5].split("/");
-    //Return only the first part of dateArray bc that is the month
-    return dateArray[0];
