@@ -31,6 +31,7 @@ for (let i= 0; i< dataArray.length - 1; i++) {
     if (pass === true) {
     //console.log("The line entry " + i + " is from the year 2018!");
     total++;
+        //Grab current line and add it to JSON object array.
         json2018Data.data.push(dataArray[i]);
         //If we encounter an issue, tell us about it.
     } else if (pass === 1) {
@@ -42,7 +43,18 @@ for (let i= 0; i< dataArray.length - 1; i++) {
 }
 
 //Finally console log the total amount of entries that matched 2018.
-console.log(json2018Data);
+//console.log(json2018Data);
+
+//Convert JSON object into JSON string
+let jsonString = JSON.stringify(json2018Data);
+
+//Write JSON string to file
+fs.writeFileSync("2018entries.json", jsonString, "utf8");
+
+console.log("File was written");
+
+//KIM:Check if the file exists if it does, append otherwise create from scratch bc this would prevent you from overwriting data.
+
 
 //This accepts a string only, returns true, false, or 1 --- if there is an issue.
 //splitting with commas since the dataset is separated with ,'s
@@ -79,5 +91,15 @@ console.log(entryDate[2]);
 
 console.log("The entry " + 23 + " is from the year 2018: " + is2018(dataArray[1]));
 //line number is index + 1
+
+
+//QUESTIONS TO CONSIDER FROM THE DATA SET:
+/*  1. Which month has the most evictions?
+    How many eviction notices by outside sources of San Francisco?
+    Which zip code had the most evicitions (Using Neighborhood - Analysis boundary)
+    How many evictions % happened bc of Ellis Act?
+   
+    Main reason why ppl were evicted?
+    What % is due to condo conversion?
 
 
