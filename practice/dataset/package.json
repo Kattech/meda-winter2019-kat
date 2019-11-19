@@ -1,0 +1,14 @@
+{
+  "name": "dataset",
+  "version": "1.0.0",
+  "description": "Practicing with datasets using Javascripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "author": "Kat",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
